@@ -2142,8 +2142,10 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				width: 140px;
+				height: 140px;
+				border-radius: 54%;
+				object-fit: cover;
 			}
 
 /* List */
@@ -2584,7 +2586,7 @@ input, select, textarea {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
+		/*-webkit-align-items: -webkit-flex-end;*/
 		-ms-align-items: -ms-flex-end;
 		align-items: flex-end;
 		-moz-justify-content: space-between;
@@ -2592,17 +2594,17 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/*background-attachment: scroll,								scroll;*/
+		background-image: url("../../images/bg.jpg");
 		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
+		background-repeat: no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		/*text-align: right;*/
 		top: 0;
 		width: 35%;
 	}
@@ -2636,6 +2638,10 @@ input, select, textarea {
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
+			background-color: #00000080;
+			padding-left: 10px;
+			max-width: 301px;
+			border-radius: 7px;
 		}
 
 		#header .image.avatar {
@@ -2969,7 +2975,7 @@ input, select, textarea {
 
 	body.is-touch #header {
 		background-attachment: scroll;
-		background-size: auto, cover;
+		background-size:cover;
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
@@ -2988,6 +2994,9 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+		#header{
+			background-size:cover;
+		}
 	}
 
 /* Large */
@@ -2999,10 +3008,13 @@ input, select, textarea {
 			#header {
 				padding: 6em 3em 3em 3em;
 				width: 30%;
+				background-size:cover;
 			}
 
 				#header h1 {
 					font-size: 1.25em;
+					/*background-color: black;*/
+					/*max-width: 300px;*/
 				}
 
 					#header h1 br {
@@ -3055,7 +3067,7 @@ input, select, textarea {
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				background-size:cover;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
@@ -3067,6 +3079,7 @@ input, select, textarea {
 
 				#header h1 {
 					font-size: 1.75em;
+					margin: auto;
 				}
 
 					#header h1 br {
