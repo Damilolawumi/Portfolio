@@ -2259,6 +2259,10 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+		ul.actions .submit-btn{
+			margin-top: 15px;
+		}
+
 		ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
